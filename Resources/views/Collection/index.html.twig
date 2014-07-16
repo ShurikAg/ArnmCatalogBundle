@@ -1,0 +1,48 @@
+{% extends 'ArnmAraneumBundle::araneum.html.twig' %}
+
+{% block title %}
+	{{ parent() }} | Catalog Collections Admin
+{% endblock %}
+
+{% block sidebar %}
+	<div class="alert alert-info hint">
+		<span class="label label-info">{{ 'default.label.info'|trans }}</span><br/>
+  		{{ 'catalog.collections.info'|trans({}, 'catalog')|raw }}
+	</div>
+{% endblock %}
+ 
+{% block content %}
+	<div class="page-header">
+		<h2>{{ 'catalog.collections.list.title'|trans({}, 'catalog') }}</h2>
+	</div>
+	
+	{% include 'ArnmAraneumBundle:Misc:messages.html.twig' %}
+	
+	<table class="table table-hover">
+	    <thead>
+	        <tr>
+	            <th>#</th>
+	            <th>{{ 'catalog.collections.list.table.head.name'|trans({}, 'catalog') }}</th>
+	            <th>{{ 'default.label.actions'|trans }}</th>
+	        </tr>
+	    </thead>
+	    <tbody>
+	    {% for entity in entities %}
+	        <tr>
+	            <td>{{ entity.id }}</td>
+	            <td>{{ entity.name }}</td>
+	            <td>
+	            	<a href="{{ path('arnm_catalog_collection_edit', { 'id': entity.id }) }}" class="btn btn-default">{{ 'default.label.edit'|trans }}</a>
+	            	<a href="{{ path('arnm_catalog_collection_delete', { 'id': entity.id }) }}" class="btn btn-danger delete-confirm">{{ 'default.label.delete'|trans }}</a>
+	            </td>
+	        </tr>
+	    {% endfor %}
+	    </tbody>
+	</table>
+	
+	<div class="well">
+	    <a href="{{ path('arnm_catalog_collection_new') }}" class="btn btn-primary">
+	        {{ 'catalog.collections.list.action.create_new'|trans({}, 'catalog') }}
+	    </a>
+    </div>
+{% endblock %}

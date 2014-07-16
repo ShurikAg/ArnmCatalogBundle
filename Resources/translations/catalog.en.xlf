@@ -1,0 +1,327 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" datatype="plaintext" original="catalog.en.xlf">
+        <body>
+            <trans-unit id="1">
+                <source>catalog.categories.info</source>
+                <target><![CDATA[<p>This section allows to administer categories of a catalog.</p><p>Any item in the catalog have to be part of some category.</p>]]></target>
+            </trans-unit>
+            <trans-unit id="2">
+                <source>catalog.categories.list.title</source>
+                <target>Categories List</target>
+            </trans-unit>
+            <trans-unit id="3">
+                <source>catalog.categories.list.table.head.name</source>
+                <target>Name</target>
+            </trans-unit>
+            <trans-unit id="4">
+                <source>catalog.categories.list.table.head.slug</source>
+                <target>Slug</target>
+            </trans-unit>
+            <trans-unit id="5">
+                <source>catalog.categories.list.table.head.active</source>
+                <target>Active</target>
+            </trans-unit>
+            <trans-unit id="6">
+                <source>catalog.categories.list.action.create_new</source>
+                <target>Create New</target>
+            </trans-unit>
+            <trans-unit id="7">
+                <source>catalog.category.new.info</source>
+                <target><![CDATA[<p>Fill the form to create new catalog category.</p>]]></target>
+            </trans-unit>
+            <trans-unit id="8">
+                <source>catalog.category.form.title.new</source>
+                <target>Create New Category</target>
+            </trans-unit>
+            <trans-unit id="9">
+                <source>catalog.category.form.name.label</source>
+                <target>Name</target>
+            </trans-unit>
+            <trans-unit id="10">
+                <source>catalog.category.form.name.help</source>
+                <target>Name is what usually visible for the end user.</target>
+            </trans-unit>
+            <trans-unit id="11">
+                <source>catalog.category.form.description.label</source>
+                <target>Description</target>
+            </trans-unit>
+            <trans-unit id="12">
+                <source>catalog.category.form.description.help</source>
+                <target>Description for now is just for management convenience.</target>
+            </trans-unit>
+            <trans-unit id="13">
+                <source>catalog.category.form.slug.label</source>
+                <target>Slug</target>
+            </trans-unit>
+            <trans-unit id="14">
+                <source>catalog.category.form.slug.help</source>
+                <target>Slug is used to build a URL for this category. Must NOT containt spaces.</target>
+            </trans-unit>
+            <trans-unit id="15">
+                <source>catalog.category.form.active.label</source>
+                <target>Active</target>
+            </trans-unit>
+            <trans-unit id="16">
+                <source>catalog.category.form.active.help</source>
+                <target>Whether or not this category is active (visible) or not.</target>
+            </trans-unit>
+            <trans-unit id="17">
+                <source>catalog.category.form.action.create</source>
+                <target>Create Category</target>
+            </trans-unit>
+            <trans-unit id="18">
+                <source>catalog.category.edit.info</source>
+                <target><![CDATA[<p>Here you can edit any details of the category.</p>]]></target>
+            </trans-unit>
+            <trans-unit id="19">
+                <source>catalog.category.form.title.edit</source>
+                <target>Edit Category</target>
+            </trans-unit>
+            <trans-unit id="20">
+                <source>catalog.category.form.action.update</source>
+                <target>Update</target>
+            </trans-unit>
+            <trans-unit id="21">
+                <source>catalog.category.message.create.success</source>
+                <target>Category has been successfully created!</target>
+            </trans-unit>
+            <trans-unit id="22">
+                <source>catalog.category.message.update.success</source>
+                <target>Category has been successfully updated!</target>
+            </trans-unit>
+            <trans-unit id="23">
+                <source>catalog.category.message.delete.success</source>
+                <target>Category has been successfully deleted!</target>
+            </trans-unit>
+            <trans-unit id="24">
+                <source>catalog.items.info</source>
+                <target><![CDATA[<p>This section allows management of catalog items.</p>]]></target>
+            </trans-unit>
+            <trans-unit id="25">
+                <source>catalog.items.list.title</source>
+                <target>Catalog Item List</target>
+            </trans-unit>
+            <trans-unit id="26">
+                <source>catalog.items.list.table.head.preveiw</source>
+                <target>Image Preview</target>
+            </trans-unit>
+            <trans-unit id="27">
+                <source>catalog.items.list.table.head.title</source>
+                <target>Title</target>
+            </trans-unit>
+            <trans-unit id="28">
+                <source>catalog.items.list.table.head.category</source>
+                <target>Category</target>
+            </trans-unit>
+            <trans-unit id="29">
+                <source>catalog.items.list.table.head.active</source>
+                <target>Active</target>
+            </trans-unit>
+            <trans-unit id="30">
+                <source>catalog.items.list.action.add_new</source>
+                <target>Add New Item</target>
+            </trans-unit>
+            <trans-unit id="31">
+                <source>catalog.item.new.info</source>
+                <target><![CDATA[<p>Fill in the form to create new item in the catalog.</p>]]></target>
+            </trans-unit>
+            <trans-unit id="32">
+                <source>catalog.item.form.title.new</source>
+                <target>Create New Catalog Item</target>
+            </trans-unit>
+            <trans-unit id="33">
+                <source>catalog.item.form.title.label</source>
+                <target>Title</target>
+            </trans-unit>
+            <trans-unit id="34">
+                <source>catalog.item.form.title.help</source>
+                <target>Title/Name of the item</target>
+            </trans-unit>
+            <trans-unit id="35">
+                <source>catalog.item.form.description.label</source>
+                <target>Description</target>
+            </trans-unit>
+            <trans-unit id="36">
+                <source>catalog.item.form.description.help</source>
+                <target>Description of the item. This is shown as a main description of the item for the site visitors.</target>
+            </trans-unit>
+            <trans-unit id="37">
+                <source>catalog.item.form.active.label</source>
+                <target>Active</target>
+            </trans-unit>
+            <trans-unit id="38">
+                <source>catalog.item.form.active.help</source>
+                <target>Whether or not the item is active (visible).</target>
+            </trans-unit>
+            <trans-unit id="39">
+                <source>catalog.item.form.category.label</source>
+                <target>Category</target>
+            </trans-unit>
+            <trans-unit id="40">
+                <source>catalog.item.form.category.help</source>
+                <target>Choose a category of this item.</target>
+            </trans-unit>
+            <trans-unit id="41">
+                <source>catalog.item.form.file.label</source>
+                <target>Image</target>
+            </trans-unit>
+            <trans-unit id="42">
+                <source>catalog.item.form.file.help</source>
+                <target>Main image of this item. Used for small thumbnails and the full image preview.</target>
+            </trans-unit>
+            <trans-unit id="43">
+                <source>catalog.item.form.action.create</source>
+                <target>Create</target>
+            </trans-unit>
+            <trans-unit id="44">
+                <source>catalog.item.form.category.empty_value</source>
+                <target>Select Category...</target>
+            </trans-unit>
+            <trans-unit id="45">
+                <source>catalog.item.message.add.success</source>
+                <target>New item was successfully added to catalog.</target>
+            </trans-unit>
+            <trans-unit id="46">
+                <source>catalog.item.edit.info</source>
+                <target><![CDATA[<p>Here you may update any details of the item.</p>]]></target>
+            </trans-unit>
+            <trans-unit id="47">
+                <source>catalog.item.form.title.edit</source>
+                <target>Edit Catalog Item</target>
+            </trans-unit>
+            <trans-unit id="48">
+                <source>catalog.item.form.action.update</source>
+                <target>Update</target>
+            </trans-unit>
+            <trans-unit id="49">
+                <source>catalog.item.message.update.success</source>
+                <target>Catalog item was successfully updated.</target>
+            </trans-unit>
+            <trans-unit id="50">
+                <source>catalog.item.message.delete.success</source>
+                <target>Catalog item was successfully deleted.</target>
+            </trans-unit>
+            <trans-unit id="51">
+                <source>catalog.collections.info</source>
+                <target><![CDATA[<p>Collection may hold any number of items. Any Item also may be part of several collections</p><p>This section allows to manage collections.</p>]]></target>
+            </trans-unit>
+            <trans-unit id="52">
+                <source>catalog.collections.list.table.head.name</source>
+                <target>Name</target>
+            </trans-unit>
+            <trans-unit id="53">
+                <source>catalog.collections.list.action.create_new</source>
+                <target>Create New Collection</target>
+            </trans-unit>
+            <trans-unit id="54">
+                <source>catalog.collection.new.info</source>
+                <target>Fill in the form to create new collection.</target>
+            </trans-unit>
+            <trans-unit id="55">
+                <source>catalog.collection.form.title.new</source>
+                <target>Create New Collection</target>
+            </trans-unit>
+            <trans-unit id="56">
+                <source>catalog.collection.form.name.label</source>
+                <target>Name</target>
+            </trans-unit>
+            <trans-unit id="57">
+                <source>catalog.collection.form.name.help</source>
+                <target>Collection Name</target>
+            </trans-unit>
+            <trans-unit id="58">
+                <source>catalog.collection.form.description.label</source>
+                <target>Description</target>
+            </trans-unit>
+            <trans-unit id="59">
+                <source>catalog.collection.form.description.help</source>
+                <target>Description is optional. May be used for representation.</target>
+            </trans-unit>
+            <trans-unit id="60">
+                <source>catalog.collection.form.action.create</source>
+                <target>Create</target>
+            </trans-unit>
+            <trans-unit id="61">
+                <source>catalog.collection.edit.info</source>
+                <target><![CDATA[<p>Here you may update any details of the collection.</p>]]></target>
+            </trans-unit>
+            <trans-unit id="62">
+                <source>catalog.collection.form.title.edit</source>
+                <target>Edit Collection</target>
+            </trans-unit>
+            <trans-unit id="63">
+                <source>catalog.collection.form.action.update</source>
+                <target>Update</target>
+            </trans-unit>
+            <trans-unit id="64">
+                <source>catalog.collection.message.update.success</source>
+                <target>Collection details has been updated successfully.</target>
+            </trans-unit>
+            <trans-unit id="65">
+                <source>catalog.collection.message.create.success</source>
+                <target>Collection has been created successfully.</target>
+            </trans-unit>
+            <trans-unit id="66">
+                <source>catalog.collections.list.title</source>
+                <target>Collections List.</target>
+            </trans-unit>
+            <trans-unit id="67">
+                <source>catalog.item.form.collections.label</source>
+                <target>Collections</target>
+            </trans-unit>
+            <trans-unit id="68">
+                <source>catalog.item.form.collections.help</source>
+                <target>Select any number of collections that you what this item o be assigned to.</target>
+            </trans-unit>
+            <trans-unit id="69">
+                <source>catalog.items.list.table.head.collections</source>
+                <target>Collections</target>
+            </trans-unit>
+            <trans-unit id="70">
+                <source>catalog.collection_showcase.form.title.label</source>
+                <target>Title</target>
+            </trans-unit>
+            <trans-unit id="71">
+                <source>catalog.collection_showcase.form.title.help</source>
+                <target>Title of the list widget</target>
+            </trans-unit>
+            <trans-unit id="72">
+                <source>catalog.collection_showcase.form.collections.label</source>
+                <target>Select Collections</target>
+            </trans-unit>
+            <trans-unit id="73">
+                <source>catalog.collection_showcase.form.collections.help</source>
+                <target>Selected collections will be shown of the list.</target>
+            </trans-unit>
+            <trans-unit id="74">
+                <source>catalog.collection_showcase.form.target_element_id.label</source>
+                <target>Target Element</target>
+            </trans-unit>
+            <trans-unit id="75">
+                <source>catalog.collection_showcase.form.target_element_id.help</source>
+                <target>ID of an HTML element where the collection will be shown.</target>
+            </trans-unit>
+            <trans-unit id="76">
+                <source>catalog.showcase_container.form.element_id.label</source>
+                <target>Element ID</target>
+            </trans-unit>
+            <trans-unit id="77">
+                <source>catalog.showcase_container.form.element_id.help</source>
+                <target>HTML element ID. This element must be exactly the same as the one that was osed as a target in the collections lists.</target>
+            </trans-unit>
+            <trans-unit id="78">
+                <source>catalog.showcase_container.form.default_collection.label</source>
+                <target>Default Colleciton</target>
+            </trans-unit>
+            <trans-unit id="79">
+                <source>catalog.showcase_container.form.default_collection.help</source>
+                <target>This collection will be shown by default.</target>
+            </trans-unit>
+            <trans-unit id="80">
+                <source>catalog.collection.message.delete.success</source>
+                <target>Collection has been deleted successfully.</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

@@ -1,0 +1,74 @@
+{% extends 'ArnmAraneumBundle::araneum.html.twig' %}
+
+{% block title %}
+	{{ parent() }} | Catalog Items Admin
+{% endblock %}
+
+{% block sidebar %}
+	<div class="alert alert-info hint">
+		<span class="label label-info">{{ 'default.label.info'|trans }}</span><br/>
+  		{{ 'catalog.items.info'|trans({}, 'catalog')|raw }}
+	</div>
+{% endblock %}
+ 
+{% block content %}
+	<div class="page-header">
+		<h2>{{ 'catalog.items.list.title'|trans({}, 'catalog') }}</h2>
+	</div>
+	
+	{% include 'ArnmAraneumBundle:Misc:messages.html.twig' %}
+	
+	<table class="table table-hover">
+	    <thead>
+	        <tr>
+	            <th>#</th>
+	            <th class="preview">{{ 'catalog.items.list.table.head.preveiw'|trans({}, 'catalog') }}</th>
+	            <th>{{ 'catalog.items.list.table.head.title'|trans({}, 'catalog') }}</th>
+	            <th>{{ 'catalog.items.list.table.head.category'|trans({}, 'catalog') }}</th>
+	            <th>{{ 'catalog.items.list.table.head.collections'|trans({}, 'catalog') }}</th>
+	            <th>{{ 'catalog.items.list.table.head.active'|trans({}, 'catalog') }}</th>
+	            <th>{{ 'default.label.actions'|trans }}</th>
+	        </tr>
+	    </thead>
+	    <tbody>
+	    {% for entity in entities %}
+	        <tr>
+	            <td>{{ entity.id }}</td>
+	            <td class="preview">
+	            	<img src="{{ entity.getWebPath | imagine_filter('araneum_preview') }}" />
+	            </td>
+	            <td>{{ entity.title }}</td>
+	            <td>
+	            	{{ entity.category.name }}
+            	</td>
+	            <td>
+	            	{% if entity.collections|length > 0 %}
+	            		<ul>
+			            	{% for collection in entity.collections %}
+			            		<li>{{ collection.name }}</li>
+			            	{% endfor %}
+		            	</ul>
+	            	{% endif %}
+            	</td>
+	            <td>
+	            	{% if entity.active %}
+	            		<span class="glyphicon glyphicon-ok"></span>
+                    {% else %}
+                        <span class="glyphicon glyphicon-remove"></span>
+	            	{% endif %}
+            	</td>
+	            <td>
+	            	<a href="{{ path('arnm_catalog_item_edit', { 'id': entity.id }) }}" class="btn btn-default">{{ 'default.label.edit'|trans }}</a>
+	            	<a href="{{ path('arnm_catalog_item_delete', { 'id': entity.id }) }}" class="btn btn-danger delete-confirm">{{ 'default.label.delete'|trans }}</a>
+	            </td>
+	        </tr>
+	    {% endfor %}
+	    </tbody>
+	</table>
+	
+	<div class="well">
+	    <a href="{{ path('arnm_catalog_item_new') }}" class="btn btn-primary">
+	        {{ 'catalog.items.list.action.add_new'|trans({}, 'catalog') }}
+	    </a>
+    </div>
+{% endblock %}

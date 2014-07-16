@@ -1,0 +1,10 @@
+{% if collections is defined%}
+	<div class="side-menu" id="catalog-collection-control">
+		{% if title is defined%}
+			<div class="title">
+				{{ title }}
+			</div>
+		{% endif %}
+		{% include 'ArnmCatalogBundle:Widgets\\CollectionsList:renderItems.html.twig' with {'collections': collections, 'targetId': targetId} %}
+	</div>
+{% endif %}

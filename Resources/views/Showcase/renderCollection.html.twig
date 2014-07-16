@@ -1,0 +1,10 @@
+{% for row in items %}
+	<div class="showcase-row">
+		{% for item in row %}
+			<div class="showcase-item">
+				<img src="{{ item.getWebPath | imagine_filter('showcase_thumb') }}" />
+			</div>
+		{% endfor %}
+		<span class="row-widner"></span>
+	</div>
+{% endfor %}

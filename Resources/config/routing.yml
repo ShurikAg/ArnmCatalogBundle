@@ -1,0 +1,112 @@
+#Category
+arnm_catalog_categories:
+    pattern:  /araneum/catalog/categories
+    defaults: { _controller: ArnmCatalogBundle:Category:index }
+arnm_catalog_category_new:
+    pattern:  /araneum/catalog/category/new
+    defaults: { _controller: ArnmCatalogBundle:Category:new }
+arnm_catalog_category_show:
+    pattern:  /araneum/catalog/category/{id}/show
+    defaults: { _controller: ArnmCatalogBundle:Category:show }
+    requirements:
+        id:  \d+
+arnm_catalog_category_edit:
+    pattern:  /araneum/catalog/category/{id}/edit
+    defaults: { _controller: ArnmCatalogBundle:Category:edit }
+    requirements:
+        id:  \d+
+arnm_catalog_category_delete:
+    pattern:  /araneum/catalog/category/{id}/delete
+    defaults: { _controller: ArnmCatalogBundle:Category:delete }
+    requirements:
+        id:  \d+
+        
+#Collection
+arnm_catalog_collections:
+    pattern:  /araneum/collection/categories
+    defaults: { _controller: ArnmCatalogBundle:Collection:index }
+arnm_catalog_collection_new:
+    pattern:  /araneum/catalog/collection/new
+    defaults: { _controller: ArnmCatalogBundle:Collection:new }
+arnm_catalog_collection_show:
+    pattern:  /araneum/catalog/collection/{id}/show
+    defaults: { _controller: ArnmCatalogBundle:Collection:show }
+    requirements:
+        id:  \d+
+arnm_catalog_collection_edit:
+    pattern:  /araneum/catalog/collection/{id}/edit
+    defaults: { _controller: ArnmCatalogBundle:Collection:edit }
+    requirements:
+        id:  \d+
+arnm_catalog_collection_delete:
+    pattern:  /araneum/catalog/collection/{id}/delete
+    defaults: { _controller: ArnmCatalogBundle:Collection:delete }
+    requirements:
+        id:  \d+
+        
+#Item        
+arnm_catalog_items:
+    pattern:  /araneum/catalog/items
+    defaults: { _controller: ArnmCatalogBundle:Item:index }
+arnm_catalog_item_new:
+    pattern:  /araneum/catalog/item/new
+    defaults: { _controller: ArnmCatalogBundle:Item:new }
+arnm_catalog_item_show:
+    pattern:  /araneum/catalog/item/{id}/show
+    defaults: { _controller: ArnmCatalogBundle:Item:show }
+    requirements:
+        id:  \d+
+arnm_catalog_item_edit:
+    pattern:  /araneum/catalog/item/{id}/edit
+    defaults: { _controller: ArnmCatalogBundle:Item:edit }
+    requirements:
+        id:  \d+
+arnm_catalog_item_delete:
+    pattern:  /araneum/catalog/item/{id}/delete
+    defaults: { _controller: ArnmCatalogBundle:Item:delete }
+    requirements:
+        id:  \d+
+        
+#Showcase rendering
+arnm_catalog_showcase:
+    pattern:  /catalog/showcase/{id}/show
+    defaults: { _controller: ArnmCatalogBundle:Showcase:show }
+    requirements:
+        id:  \d+
+        
+#Widgets
+widget_ArnmCatalog_CollectionsList_edit:
+    pattern:  /araneum/widget/catalog/showcase-collections-list/edit
+    defaults: { _controller: ArnmCatalogBundle:Widgets\CollectionsList:edit }
+    requirements:
+        _method:  GET
+widget_ArnmCatalog_CollectionsList_data:
+    pattern:  /araneum/widget/catalog/showcase-collections-list/data/{id}
+    defaults: { _controller: ArnmCatalogBundle:Widgets\CollectionsList:data }
+    requirements:
+        id:  \d+
+        _method:  GET
+widget_ArnmCatalog_CollectionsList_update:
+    pattern:  /araneum/widget/catalog/showcase-collections-list/update/{id}
+    defaults: { _controller: ArnmCatalogBundle:Widgets\CollectionsList:update }
+    requirements:
+        id:  \d+
+        _method:  PUT
+        
+widget_ArnmCatalog_ShowcaseContainer_edit:
+    pattern:  /araneum/widget/catalog/collection-showcase-container/edit
+    defaults: { _controller: ArnmCatalogBundle:Widgets\ShowcaseContainer:edit }
+    requirements:
+        _method:  GET
+widget_ArnmCatalog_ShowcaseContainer_data:
+    pattern:  /araneum/widget/catalog/collection-showcase-container/data/{id}
+    defaults: { _controller: ArnmCatalogBundle:Widgets\ShowcaseContainer:data }
+    requirements:
+        id:  \d+
+        _method:  GET
+widget_ArnmCatalog_ShowcaseContainer_update:
+    pattern:  /araneum/widget/catalog/collection-showcase-container/update/{id}
+    defaults: { _controller: ArnmCatalogBundle:Widgets\ShowcaseContainer:update }
+    requirements:
+        id:  \d+
+        _method:  PUT

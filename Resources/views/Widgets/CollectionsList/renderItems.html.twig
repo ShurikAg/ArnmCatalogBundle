@@ -1,0 +1,9 @@
+<ul>
+  {% for node in collections %}
+    <li id="{{ node.id }}">
+      <a href="{{ path('arnm_catalog_showcase', { 'id': node.id }) }}" rel="{{ targetId }}" class="showcase-control">
+        {{ node.name }}
+      </a>
+    </li>
+  {% endfor %}
+</ul>
